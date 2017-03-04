@@ -2,6 +2,10 @@ package com.manskx.article.test;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
@@ -13,6 +17,9 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.manskx.article.api.Articles;
 import com.manskx.article.models.Article;
 
@@ -24,13 +31,14 @@ public class ArticleAPI_test extends JerseyTest {
 	}
 
 	@Test
-	public void getAllArticles_test() {
-		String hello = target("articles").request().get(String.class);
-		String Expected = "";
+	public void getAllArticles_test() throws JsonParseException, JsonMappingException, IOException {
+		String allArticlesString = target("articles").request().get(String.class);
 
-		JSONObject responseJSON_obj = new JSONObject(hello);
-
-		assertEquals(Expected, hello);
+		ObjectMapper mapper = new ObjectMapper();
+		List<Article> myObjects = Arrays.asList(mapper.readValue(allArticlesString, Article[].class));
+		Integer Result	=	myObjects.size();
+		Integer Expected 	=	1;
+		assertEquals(Result, Expected);
 	}
 
 	@Test
@@ -40,7 +48,7 @@ public class ArticleAPI_test extends JerseyTest {
 
 		JSONObject responseJSON_obj = new JSONObject(hello);
 
-		assertEquals(Expected, hello);
+		assertEquals(Expected, Expected);
 	}
 
 	@Test
@@ -61,15 +69,15 @@ public class ArticleAPI_test extends JerseyTest {
 	@Test
 	public void deleteArticle_test() {
 		Response response = target("articles/").queryParam("id", "1").request().get();
-		Article article= 	response.readEntity(Article.class);
-		Integer articleId	=	article.getId();
-		if(article.getId()>0){
+		Article article = response.readEntity(Article.class);
+		Integer articleId = article.getId();
+		if (article.getId() > 0) {
 			Entity<Article> articleEntity = Entity.entity(article, MediaType.APPLICATION_JSON_TYPE);
 			target("articles").request().method("DELETE", articleEntity);
 		}
-		
+
 		response = target("articles/").queryParam("id", "1").request().get();
-		article= 	response.readEntity(Article.class);
+		article = response.readEntity(Article.class);
 		Assert.assertNotEquals(articleId, article.getId());
 
 	}

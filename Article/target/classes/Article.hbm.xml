@@ -17,8 +17,5 @@
 			<column name="body" />
 		</property>
 
-
-
-
 	</class>
 </hibernate-mapping>
