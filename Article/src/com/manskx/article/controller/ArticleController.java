@@ -17,24 +17,49 @@ import com.manskx.article.services.AtricleService;
  *
  */
 public class ArticleController {
+	/**
+	 * 
+	 * @return get all articles from database
+	 */
 	public List<Article> getAllArticles() {
 		AtricleService articleService = new ArticleServiceImp();
 		List<Article> articles = articleService.getAllArticles();
 		return articles;
 	}
 
+	/**
+	 * adding article to databse
+	 * 
+	 * @param article:
+	 *            input article object containing all required prams #### NOTE:
+	 *            id is not required ####
+	 * @return success or not
+	 */
 	public boolean addArticle(Article article) {
 		AtricleService articleService = new ArticleServiceImp();
 		articleService.addArticle(article);
 		return true;
 	}
 
+	/**
+	 * 
+	 * @param article:
+	 *            input article object to be modified containing all required
+	 *            prams #### NOTE: id is required ####
+	 * @return success or not
+	 */
 	public boolean editArticle(Article article) {
 		AtricleService articleService = new ArticleServiceImp();
 		articleService.editArticle(article);
 		return true;
 	}
 
+	/**
+	 * 
+	 * @param id:
+	 *            is of article wanted to be deleted
+	 * @return
+	 */
 	public boolean deleteArticle(Integer id) {
 		Article article = new Article();
 		article.setId(id);
@@ -43,6 +68,13 @@ public class ArticleController {
 		return true;
 	}
 
+	/**
+	 * get only one article
+	 * 
+	 * @param id:
+	 *            is of article wanted to be retrieved
+	 * @return
+	 */
 	public Article getArticle(Integer id) {
 		Article article = new Article();
 		article.setId(id);
@@ -51,6 +83,14 @@ public class ArticleController {
 		return article;
 
 	}
+
+	/**
+	 * 
+	 * @param query:
+	 *            query string for searching
+	 * @return: list of articles that matched this query
+	 * @throws Exception
+	 */
 	public List<Article> searchArticles(String query) throws Exception {
 		AtricleSearchService atricleSearchService = new ArticleServiceImp();
 		List<Article> articles = atricleSearchService.searchArticles(query);

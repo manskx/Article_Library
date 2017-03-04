@@ -1,0 +1,15 @@
+<dataConfig>
+
+	<dataSource type="JdbcDataSource"
+		driver="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/article_library" 
+		user="root"
+		password="123456789" />
+
+	<document>
+		<entity name="id" query="SELECT id, title, body from Article" />
+	</document>
+</dataConfig>
+
+
+   

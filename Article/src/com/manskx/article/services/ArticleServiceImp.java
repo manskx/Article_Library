@@ -11,6 +11,13 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.manskx.article.database.HibernateUtil;
 import com.manskx.article.models.Article;
 
+/**
+ * This is an implementation for user services and Article search services that
+ * provides functionalities for CRUD operations and search
+ * 
+ * @author mansk
+ *
+ */
 public class ArticleServiceImp implements AtricleService, AtricleSearchService {
 
 	public List<Article> getAllArticles() {
@@ -49,6 +56,9 @@ public class ArticleServiceImp implements AtricleService, AtricleSearchService {
 		session.getTransaction().commit();
 	}
 
+	/**
+	 * This is implementation for search articles using solr
+	 */
 	public List<Article> searchArticles(String query) throws Exception {
 		List<Article> articles = null;
 

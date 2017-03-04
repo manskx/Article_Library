@@ -1,7 +1,7 @@
 package com.manskx.article.models;
 
 /**
- * Database model
+ * Database model for Article
  * 
  * @author mansk
  *

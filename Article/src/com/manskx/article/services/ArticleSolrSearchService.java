@@ -62,7 +62,6 @@ public class ArticleSolrSearchService {
 	 * @throws UnsupportedEncodingException
 	 */
 	public Map<String, String> createSolrQueryParams(String searchQuery) {
-		// lemmatize query
 		List<String> words = Arrays.asList(searchQuery.split(" "));
 		ArrayList<String> cleanWords = removeStoppingWords(words);
 		// create query words
