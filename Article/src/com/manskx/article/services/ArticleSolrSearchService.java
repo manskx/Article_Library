@@ -8,6 +8,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.core.Response;
 
 import org.json.JSONObject;
 
@@ -154,5 +155,11 @@ public class ArticleSolrSearchService {
 		// Close the input stream
 		br.close();
 		return stoppingWordsList;
+	}
+
+	public static void importData() {
+		Response response = ClientBuilder.newClient().target(SolrConfigurations.SOLR_HOST).path("dataimport")
+				.queryParam("command", SolrConfigurations.SOLR_DATA_IMPORT_TYPE).request().get();
+
 	}
 }

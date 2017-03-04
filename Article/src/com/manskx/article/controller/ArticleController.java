@@ -38,6 +38,7 @@ public class ArticleController {
 	public boolean addArticle(Article article) {
 		AtricleService articleService = new ArticleServiceImp();
 		articleService.addArticle(article);
+		((AtricleSearchService) articleService).importData();
 		return true;
 	}
 
@@ -51,6 +52,8 @@ public class ArticleController {
 	public boolean editArticle(Article article) {
 		AtricleService articleService = new ArticleServiceImp();
 		articleService.editArticle(article);
+		((AtricleSearchService) articleService).importData();
+
 		return true;
 	}
 
@@ -65,6 +68,8 @@ public class ArticleController {
 		article.setId(id);
 		AtricleService articleService = new ArticleServiceImp();
 		articleService.deleteArticle(article);
+		((AtricleSearchService) articleService).importData();
+
 		return true;
 	}
 

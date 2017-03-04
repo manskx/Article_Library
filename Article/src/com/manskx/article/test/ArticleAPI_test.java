@@ -52,15 +52,15 @@ public class ArticleAPI_test extends JerseyTest {
 	@Test
 	public void addArticle_test() {
 		Article article = new Article();
-		article.setTitle("MANSY ADDTESTCASE");
-		article.setTitle("MANSY BODY TEST");
+		article.setTitle("MANSY XXXSPECIAL");
+		article.setBody("MANSY BODY TEST 2");
 
 		Entity<Article> articleEntity = Entity.entity(article, MediaType.APPLICATION_JSON_TYPE);
 		target("articles").request().post(articleEntity);
 
-		Response response = target("articles/search").queryParam("query", "MANSY TEST").request().get();
+		Response response = target("articles/search").queryParam("query", "XXXSPECIAL").request().get();
 
-		Assert.assertEquals("ADDTESTCASE", response.readEntity(Article.class).getTitle());
+		Assert.assertEquals("MANSY XXXSPECIAL", response.readEntity(Article[].class)[0].getTitle());
 
 	}
 

@@ -73,4 +73,7 @@ public class ArticleServiceImp implements AtricleService, AtricleSearchService {
 
 	}
 
+	public void importData() {
+		ArticleSolrSearchService.importData();
+	}
 }

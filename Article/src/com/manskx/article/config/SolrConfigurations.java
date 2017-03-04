@@ -1,6 +1,5 @@
 package com.manskx.article.config;
 
-
 public class SolrConfigurations {
 	// solr engine base server url
 	// this is important because in most cases solr is not running in the same
@@ -20,6 +19,8 @@ public class SolrConfigurations {
 	// the fields to be shown in the result json/xml
 	public static final String SOLR_RESULTS_FIELDS = "id,title,body";
 	// stopping words file
-	public static final String SOLR_STOPPING_WORDS_FILE = "/home/mansk/workspace/knowble_test/solr-6.3.0/server/solr/nhs_conditions/conf/stopwords.txt";
+	public static final String SOLR_STOPPING_WORDS_FILE = "/home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/conf/stopwords.txt";
 
+	// Solr dataimport type
+	public static final String SOLR_DATA_IMPORT_TYPE = "full-import";
 }
