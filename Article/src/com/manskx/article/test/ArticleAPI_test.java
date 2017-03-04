@@ -36,47 +36,44 @@ public class ArticleAPI_test extends JerseyTest {
 
 		ObjectMapper mapper = new ObjectMapper();
 		List<Article> myObjects = Arrays.asList(mapper.readValue(allArticlesString, Article[].class));
-		Integer Result	=	myObjects.size();
-		Integer Expected 	=	1;
+		Integer Result = myObjects.size();
+		Integer Expected = 1;
 		assertEquals(Result, Expected);
 	}
 
 	@Test
 	public void getArticle_test() {
-		String hello = target("articles/").queryParam("id", "1").request().get(String.class);
-		String Expected = "";
+		Article article = target("articles/2").request().get(Article.class);
+		String Expected = "test mansy body 2";
 
-		JSONObject responseJSON_obj = new JSONObject(hello);
-
-		assertEquals(Expected, Expected);
+		assertEquals(Expected, article.getBody());
 	}
 
 	@Test
 	public void addArticle_test() {
 		Article article = new Article();
-		article.setTitle("MANSY TEST");
+		article.setTitle("MANSY ADDTESTCASE");
 		article.setTitle("MANSY BODY TEST");
 
 		Entity<Article> articleEntity = Entity.entity(article, MediaType.APPLICATION_JSON_TYPE);
 		target("articles").request().post(articleEntity);
 
-		Response response = target("articles/search").queryParam("title", "MANSY TEST").request().get();
+		Response response = target("articles/search").queryParam("query", "MANSY TEST").request().get();
 
-		Assert.assertEquals("MANSY TEST", response.readEntity(Article.class).getTitle());
+		Assert.assertEquals("ADDTESTCASE", response.readEntity(Article.class).getTitle());
 
 	}
 
 	@Test
 	public void deleteArticle_test() {
-		Response response = target("articles/").queryParam("id", "1").request().get();
+		Integer articleId = 5;
+		Response response = target("articles/" + articleId).request().get();
 		Article article = response.readEntity(Article.class);
-		Integer articleId = article.getId();
 		if (article.getId() > 0) {
-			Entity<Article> articleEntity = Entity.entity(article, MediaType.APPLICATION_JSON_TYPE);
-			target("articles").request().method("DELETE", articleEntity);
+			target("articles/" + articleId).request().delete();
 		}
 
-		response = target("articles/").queryParam("id", "1").request().get();
+		response = target("articles/" + articleId).request().get();
 		article = response.readEntity(Article.class);
 		Assert.assertNotEquals(articleId, article.getId());
 
