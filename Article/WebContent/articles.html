@@ -108,6 +108,15 @@
 </div>
 <!-- // Modal -->
 
+<!--  Template -->
+<template id="article_mustache_template">
+			<tr>
+				<td>{{id}}</td> 
+				<td>{{title}}</td>
+				<td><button onclick='GetArticleDetails({{id}})' class='btn btn-warning'>Edit</button></td>
+				<td><button onclick='DeleteArticle({{id}})' class='btn btn-danger'>Delete</button></td>
+			</tr>
+</template>
 
 
 <!-- Jquery JS file -->
@@ -116,6 +125,9 @@
               crossorigin="anonymous"></script>
 <!-- Bootstrap JS file -->
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Mustache -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 
 <!-- Custom JS file -->
 <script type="text/javascript" src="js/script.js"></script>
