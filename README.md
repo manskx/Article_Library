@@ -55,6 +55,6 @@ Containing the full loop from the database and restful apis to front end and con
 * adding more test cases
 * adding delta import to solr
 
-### Important Configurations ###
+### Contact ###
 * Ahmed Mansy
 * ahmed.mansy156@gmail.com
