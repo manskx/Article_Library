@@ -1,230 +1,329 @@
-2017-03-04 14:17:51.635 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
-2017-03-04 14:17:51.900 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
-2017-03-04 14:17:51.901 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-03-04 14:17:51.901 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/workspace/article_library/solr-6.3.0
-2017-03-04 14:17:51.968 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-03-04T14:17:51.903Z
-2017-03-04 14:17:51.968 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-03-04 14:17:51.982 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/mansk/workspace/article_library/solr-6.3.0/server/solr
-2017-03-04 14:17:51.987 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/mansk/workspace/article_library/solr-6.3.0/server/solr/solr.xml
-2017-03-04 14:17:52.237 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-03-04 14:17:52.286 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/mansk/workspace/article_library/solr-6.3.0/server/solr
-2017-03-04 14:17:52.293 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [article_library]
-2017-03-04 14:17:52.320 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@1bea7a51{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2017-03-04 14:17:52.321 INFO  (main) [   ] o.e.j.s.Server Started @1185ms
-2017-03-04 14:17:52.361 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /home/mansk/workspace/article_library/solr-6.3.0/contrib/dataimporthandler/lib filtered by .*\.jar to classpath: /home/mansk/workspace/article_library/solr-6.3.0/contrib/dataimporthandler/lib
-2017-03-04 14:17:52.369 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [article_library] Added 52 libs to classloader, from paths: [/home/mansk/workspace/article_library/solr-6.3.0/contrib/clustering/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/extraction/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/langid/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/velocity/lib, /home/mansk/workspace/article_library/solr-6.3.0/dist]
-2017-03-04 14:17:52.526 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
-2017-03-04 14:17:52.698 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [article_library] Schema name=example-data-driven-schema
-2017-03-04 14:17:53.290 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
-2017-03-04 14:17:53.333 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'article_library' using configuration from instancedir /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library
-2017-03-04 14:17:53.378 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.c.SolrCore [[article_library] ] Opening new SolrCore at [/home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library], dataDir=[/home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/data/]
-2017-03-04 14:17:53.419 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-03-04 14:17:53.641 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-03-04 14:17:53.642 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-03-04 14:17:53.648 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-03-04 14:17:53.648 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-03-04 14:17:53.692 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@c304703[article_library] main]
-2017-03-04 14:17:53.698 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/conf
-2017-03-04 14:17:53.710 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-03-04 14:17:53.715 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-03-04 14:17:53.717 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/conf/elevate.xml
-2017-03-04 14:17:53.728 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-03-04 14:17:53.745 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@c304703[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-03-04 14:17:53.745 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-03-04 14:17:53.745 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-03-04 14:17:53.745 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@c304703[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-03-04 14:17:53.749 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1560949108243431424
-2017-03-04 14:18:11.525 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637091326} status=0 QTime=6
-2017-03-04 14:18:11.539 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1488637091497} status=0 QTime=1
-2017-03-04 14:18:11.544 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1488637091327&ts=1488637091327} status=503 QTime=1
-2017-03-04 14:18:11.545 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/replication params={wt=json&command=details&_=1488637091499} status=0 QTime=2
-2017-03-04 14:18:11.579 INFO  (qtp472654579-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637091327} status=0 QTime=50
-2017-03-04 14:18:11.588 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/system params={wt=json&_=1488637091498} status=0 QTime=55
-2017-03-04 14:18:13.683 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637091326} status=0 QTime=0
-2017-03-04 14:18:13.703 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637093630} status=0 QTime=2
-2017-03-04 14:18:13.708 INFO  (qtp472654579-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637091327} status=0 QTime=7
-2017-03-04 14:18:13.852 INFO  (qtp472654579-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637091326} status=0 QTime=0
-2017-03-04 14:18:13.863 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637091327} status=0 QTime=7
-2017-03-04 14:18:13.893 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637093630} status=0 QTime=0
-2017-03-04 14:18:13.900 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637093631} status=0 QTime=4
-2017-03-04 14:18:14.015 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637093631} status=0 QTime=0
-2017-03-04 14:18:15.622 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637093631} status=0 QTime=0
-2017-03-04 14:18:16.467 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
-2017-03-04 14:18:16.475 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
-2017-03-04 14:18:16.476 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
-2017-03-04 14:18:16.482 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={core=article_library&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1488637093631&verbose=false} status=0 QTime=18
-2017-03-04 14:18:16.483 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
-2017-03-04 14:18:16.498 WARN  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
-2017-03-04 14:18:16.502 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637093631} status=0 QTime=0
-2017-03-04 14:18:16.607 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
-2017-03-04 14:18:16.815 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 207
-2017-03-04 14:18:16.850 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
-2017-03-04 14:18:16.850 INFO  (Thread-14) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-03-04 14:18:16.850 INFO  (Thread-14) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@15f82c02
-2017-03-04 14:18:17.034 INFO  (Thread-14) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@21748059[article_library] main]
-2017-03-04 14:18:17.035 INFO  (Thread-14) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-03-04 14:18:17.036 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@21748059[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.3.0):C2)))}
-2017-03-04 14:18:17.036 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-03-04 14:18:17.036 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@21748059[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.3.0):C2)))}
-2017-03-04 14:18:17.036 WARN  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
-2017-03-04 14:18:17.037 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
-2017-03-04 14:18:17.038 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.539
-2017-03-04 14:18:17.038 INFO  (Thread-14) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={core=article_library&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1488637093631&verbose=false} status=0 QTime=18{deleteByQuery=*:* (-1560949132143624192),add=[2 (1560949132433031168), 6 (1560949132465537024)],commit=} 0 573
-2017-03-04 14:18:18.183 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637093631} status=0 QTime=0
-2017-03-04 14:21:20.540 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:modified%2BOR%2B"modified"^5+body:modified%2BOR%2B"modified"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=1 status=0 QTime=52
-2017-03-04 14:21:28.614 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:mansy%2BOR%2B"mansy"^5+body:mansy%2BOR%2B"mansy"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=2 status=0 QTime=7
-2017-03-04 14:21:38.440 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:man%2BOR%2B"man"^5+body:man%2BOR%2B"man"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=2 status=0 QTime=4
-2017-03-04 14:24:18.779 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:man%2BOR%2B"man"^5+body:man%2BOR%2B"man"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=2 status=0 QTime=2
-2017-03-04 14:26:34.569 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=4
-2017-03-04 14:27:21.194 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=3
-2017-03-04 14:28:34.403 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=2
-2017-03-04 14:28:50.519 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:man%2BOR%2B"man"^5+body:man%2BOR%2B"man"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=2 status=0 QTime=1
-2017-03-04 14:28:54.283 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=1
-2017-03-04 14:29:44.128 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=2
-2017-03-04 14:30:57.269 INFO  (qtp472654579-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637857073} status=0 QTime=0
-2017-03-04 14:30:57.281 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637857074} status=0 QTime=10
-2017-03-04 14:30:57.303 INFO  (qtp472654579-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637857074} status=0 QTime=10
-2017-03-04 14:31:03.355 INFO  (qtp472654579-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637857073} status=0 QTime=0
-2017-03-04 14:31:03.373 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1488637863335} status=0 QTime=0
-2017-03-04 14:31:03.375 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/replication params={wt=json&command=details&_=1488637863336} status=0 QTime=0
-2017-03-04 14:31:03.377 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1488637857074&ts=1488637857074} status=503 QTime=0
-2017-03-04 14:31:03.385 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/system params={wt=json&_=1488637863335} status=0 QTime=7
-2017-03-04 14:31:03.395 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637857074} status=0 QTime=9
-2017-03-04 14:31:10.692 INFO  (qtp472654579-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637857073} status=0 QTime=0
-2017-03-04 14:31:10.710 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:10.716 INFO  (qtp472654579-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637857074} status=0 QTime=6
-2017-03-04 14:31:10.839 INFO  (qtp472654579-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637857073} status=0 QTime=0
-2017-03-04 14:31:10.853 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:10.854 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:10.863 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637857074} status=0 QTime=8
-2017-03-04 14:31:10.905 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:21.381 INFO  (qtp472654579-20) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
-2017-03-04 14:31:21.383 INFO  (qtp472654579-20) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
-2017-03-04 14:31:21.384 INFO  (qtp472654579-20) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
-2017-03-04 14:31:21.384 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
-2017-03-04 14:31:21.384 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={core=article_library&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1488637870645&verbose=false} status=0 QTime=3
-2017-03-04 14:31:21.388 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:31:21.411 INFO  (Thread-16) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@7c3f97cc[article_library] realtime]
-2017-03-04 14:31:21.415 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
-2017-03-04 14:31:21.418 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:21.427 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 11
-2017-03-04 14:31:21.436 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
-2017-03-04 14:31:21.437 INFO  (Thread-16) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-03-04 14:31:21.437 INFO  (Thread-16) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@15f82c02
-2017-03-04 14:31:21.569 INFO  (Thread-16) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@19776493[article_library] main]
-2017-03-04 14:31:21.572 INFO  (Thread-16) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-03-04 14:31:21.573 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@19776493[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.3.0):C6)))}
-2017-03-04 14:31:21.573 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-03-04 14:31:21.574 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@19776493[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.3.0):C6)))}
-2017-03-04 14:31:21.580 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:31:21.583 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
-2017-03-04 14:31:21.584 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.195
-2017-03-04 14:31:21.585 INFO  (Thread-16) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={core=article_library&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1488637870645&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1560949955115352064),add=[2 (1560949955156246528), 6 (1560949955158343680), 7 (1560949955159392256), 8 (1560949955160440832), 9 (1560949955161489408), 10 (1560949955163586560)],commit=} 0 204
-2017-03-04 14:31:22.461 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637870645} status=0 QTime=0
-2017-03-04 14:31:24.948 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=4 status=0 QTime=5
-2017-03-04 14:31:43.305 INFO  (qtp472654579-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637903069} status=0 QTime=0
-2017-03-04 14:31:43.314 INFO  (qtp472654579-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637903070} status=0 QTime=8
-2017-03-04 14:31:43.326 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:43.326 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:43.458 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:53.189 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:55.206 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:57.233 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:31:59.201 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:01.208 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:03.219 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:05.197 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:07.197 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:09.193 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:11.198 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637903264} status=0 QTime=0
-2017-03-04 14:32:13.732 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:13.753 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:13.753 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:13.757 INFO  (qtp472654579-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=8
-2017-03-04 14:32:13.908 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:26.092 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:26.106 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:26.124 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=18
-2017-03-04 14:32:26.257 INFO  (qtp472654579-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:26.271 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:26.272 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:26.282 INFO  (qtp472654579-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=11
-2017-03-04 14:32:26.331 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:28.004 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:28.019 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:28.027 INFO  (qtp472654579-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=10
-2017-03-04 14:32:28.137 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:28.169 INFO  (qtp472654579-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=29
-2017-03-04 14:32:28.177 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:28.177 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:28.410 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:29.529 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:29.548 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=5
-2017-03-04 14:32:29.549 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:29.675 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:29.685 INFO  (qtp472654579-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=8
-2017-03-04 14:32:29.693 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:29.693 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:29.778 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:30.786 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:30.805 INFO  (qtp472654579-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=6
-2017-03-04 14:32:30.810 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1488637950781} status=0 QTime=11
-2017-03-04 14:32:32.587 INFO  (qtp472654579-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:32.597 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/replication params={wt=json&command=details&_=1488637952578} status=0 QTime=0
-2017-03-04 14:32:32.599 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1488637952577} status=0 QTime=0
-2017-03-04 14:32:32.604 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/system params={wt=json&_=1488637952577} status=0 QTime=5
-2017-03-04 14:32:32.610 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=13
-2017-03-04 14:32:32.616 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1488637933488&ts=1488637933488} status=503 QTime=0
-2017-03-04 14:32:33.447 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:33.459 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:33.463 INFO  (qtp472654579-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=6
-2017-03-04 14:32:33.615 INFO  (qtp472654579-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1488637933487} status=0 QTime=0
-2017-03-04 14:32:33.629 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:33.632 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1488637933684} status=0 QTime=0
-2017-03-04 14:32:33.635 INFO  (qtp472654579-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1488637933488} status=0 QTime=6
-2017-03-04 14:32:33.672 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1488637933684} status=0 QTime=0
-2017-03-04 14:45:02.398 INFO  (qtp472654579-20) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5+body:XXXSPECIAL%2BOR%2B"XXXSPECIAL"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=4 status=0 QTime=3
-2017-03-04 14:45:40.824 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
-2017-03-04 14:45:40.826 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
-2017-03-04 14:45:40.826 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
-2017-03-04 14:45:40.835 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=10
-2017-03-04 14:45:40.835 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
-2017-03-04 14:45:40.845 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:45:40.849 INFO  (Thread-17) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@41db1de1[article_library] realtime]
-2017-03-04 14:45:40.853 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
-2017-03-04 14:45:40.877 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 23
-2017-03-04 14:45:40.886 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
-2017-03-04 14:45:40.886 INFO  (Thread-17) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-03-04 14:45:40.886 INFO  (Thread-17) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@15f82c02
-2017-03-04 14:45:40.997 INFO  (Thread-17) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@7db0b014[article_library] main]
-2017-03-04 14:45:40.998 INFO  (Thread-17) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-03-04 14:45:40.998 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7db0b014[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.3.0):C7)))}
-2017-03-04 14:45:40.998 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-03-04 14:45:40.998 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@7db0b014[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.3.0):C7)))}
-2017-03-04 14:45:40.999 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:45:41.000 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
-2017-03-04 14:45:41.000 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.154
-2017-03-04 14:45:41.000 INFO  (Thread-17) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=10{deleteByQuery=*:* (-1560950856321335296),add=[2 (1560950856353841152), 6 (1560950856356986880), 7 (1560950856356986881), 8 (1560950856358035456), 9 (1560950856360132608), 10 (1560950856361181184), 11 (1560950856362229760)],commit=} 0 176
-2017-03-04 14:45:49.131 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:callbac%2BOR%2B"callbac"^5+body:callbac%2BOR%2B"callbac"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=1 status=0 QTime=4
-2017-03-04 14:46:47.401 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
-2017-03-04 14:46:47.402 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
-2017-03-04 14:46:47.402 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
-2017-03-04 14:46:47.405 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
-2017-03-04 14:46:47.405 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4
-2017-03-04 14:46:47.411 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:46:47.415 INFO  (Thread-18) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@13d8b6de[article_library] realtime]
-2017-03-04 14:46:47.418 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
-2017-03-04 14:46:47.425 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
-2017-03-04 14:46:47.431 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
-2017-03-04 14:46:47.431 INFO  (Thread-18) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-03-04 14:46:47.432 INFO  (Thread-18) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@15f82c02
-2017-03-04 14:46:47.537 INFO  (Thread-18) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@4665bc15[article_library] main]
-2017-03-04 14:46:47.538 INFO  (Thread-18) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-03-04 14:46:47.538 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4665bc15[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C6)))}
-2017-03-04 14:46:47.538 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-03-04 14:46:47.538 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@4665bc15[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C6)))}
-2017-03-04 14:46:47.541 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
-2017-03-04 14:46:47.543 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
-2017-03-04 14:46:47.545 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.133
-2017-03-04 14:46:47.545 INFO  (Thread-18) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4{deleteByQuery=*:* (-1560950926120845312),add=[2 (1560950926135525376), 6 (1560950926136573952), 7 (1560950926137622528), 8 (1560950926138671104), 9 (1560950926139719680), 10 (1560950926140768256)],commit=} 0 144
-2017-03-04 14:46:59.072 INFO  (qtp472654579-16) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/select params={q=title:callbac%2BOR%2B"callbac"^5+body:callbac%2BOR%2B"callbac"^5&defType=edismax&indent=c&qf=title^10+body^6&fl=id,title,body&wt=json} hits=0 status=0 QTime=6
+2017-03-05 23:49:06.586 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2017-03-05 23:49:06.863 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2017-03-05 23:49:06.863 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-03-05 23:49:06.863 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/workspace/article_library/solr-6.3.0
+2017-03-05 23:49:06.936 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-03-05T23:49:06.864Z
+2017-03-05 23:49:06.936 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-03-05 23:49:06.956 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/mansk/workspace/article_library/solr-6.3.0/server/solr
+2017-03-05 23:49:06.962 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/mansk/workspace/article_library/solr-6.3.0/server/solr/solr.xml
+2017-03-05 23:49:07.256 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-03-05 23:49:07.316 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/mansk/workspace/article_library/solr-6.3.0/server/solr
+2017-03-05 23:49:07.323 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [article_library]
+2017-03-05 23:49:07.374 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@24269709{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2017-03-05 23:49:07.374 INFO  (main) [   ] o.e.j.s.Server Started @1279ms
+2017-03-05 23:49:07.403 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Couldn't add files from /home/mansk/workspace/article_library/solr-6.3.0/contrib/dataimporthandler/lib filtered by .*\.jar to classpath: /home/mansk/workspace/article_library/solr-6.3.0/contrib/dataimporthandler/lib
+2017-03-05 23:49:07.415 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [article_library] Added 52 libs to classloader, from paths: [/home/mansk/workspace/article_library/solr-6.3.0/contrib/clustering/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/extraction/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/langid/lib, /home/mansk/workspace/article_library/solr-6.3.0/contrib/velocity/lib, /home/mansk/workspace/article_library/solr-6.3.0/dist]
+2017-03-05 23:49:07.625 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2017-03-05 23:49:07.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [article_library] Schema name=example-data-driven-schema
+2017-03-05 23:49:08.439 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-03-05 23:49:08.486 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'article_library' using configuration from instancedir /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library
+2017-03-05 23:49:08.527 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.c.SolrCore [[article_library] ] Opening new SolrCore at [/home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library], dataDir=[/home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/data/]
+2017-03-05 23:49:08.568 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-03-05 23:49:08.850 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-03-05 23:49:08.850 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-03-05 23:49:08.864 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-03-05 23:49:08.864 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-03-05 23:49:08.950 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@504b5c4a[article_library] main]
+2017-03-05 23:49:08.957 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/conf
+2017-03-05 23:49:08.973 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-03-05 23:49:08.979 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-03-05 23:49:08.982 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/workspace/article_library/solr-6.3.0/server/solr/article_library/conf/elevate.xml
+2017-03-05 23:49:08.998 INFO  (coreLoadExecutor-6-thread-1) [   x:article_library] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-03-05 23:49:09.019 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@504b5c4a[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C6)))}
+2017-03-05 23:49:09.019 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:09.019 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-03-05 23:49:09.019 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@504b5c4a[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C6)))}
+2017-03-05 23:49:16.703 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:16.711 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:16.711 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:16.719 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:16.719 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=22
+2017-03-05 23:49:16.735 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:16.930 INFO  (Thread-14) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@3ce8813b[article_library] realtime]
+2017-03-05 23:49:16.983 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:17.334 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 351
+2017-03-05 23:49:17.374 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:17.375 INFO  (Thread-14) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:17.375 INFO  (Thread-14) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:17.525 INFO  (Thread-14) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@51e42a5c[article_library] main]
+2017-03-05 23:49:17.533 INFO  (Thread-14) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:17.535 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@51e42a5c[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(6.3.0):C8)))}
+2017-03-05 23:49:17.535 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:17.536 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@51e42a5c[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(6.3.0):C8)))}
+2017-03-05 23:49:17.540 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:17.542 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:17.542 INFO  (Thread-14) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.806
+2017-03-05 23:49:17.543 INFO  (Thread-14) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=22{deleteByQuery=*:* (-1561075653612142592),add=[2 (1561075654159499264), 6 (1561075654189907968), 7 (1561075654190956544), 9 (1561075654192005120), 10 (1561075654193053696), 12 (1561075654194102272), 13 (1561075654195150848), 14 (1561075654195150849)],commit=} 0 846
+2017-03-05 23:49:22.115 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:22.121 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:22.123 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:22.137 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=22
+2017-03-05 23:49:22.138 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:22.161 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:22.165 INFO  (Thread-16) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@31408292[article_library] realtime]
+2017-03-05 23:49:22.179 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:22.221 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 40
+2017-03-05 23:49:22.250 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:22.250 INFO  (Thread-16) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:22.251 INFO  (Thread-16) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:22.377 INFO  (Thread-16) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@568cb728[article_library] main]
+2017-03-05 23:49:22.378 INFO  (Thread-16) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:22.378 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@568cb728[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(6.3.0):C8)))}
+2017-03-05 23:49:22.379 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:22.379 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@568cb728[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(6.3.0):C8)))}
+2017-03-05 23:49:22.382 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:22.382 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:22.382 INFO  (Thread-16) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.220
+2017-03-05 23:49:22.382 INFO  (Thread-16) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=22{deleteByQuery=*:* (-1561075659216781312),add=[2 (1561075659278647296), 6 (1561075659281793024), 7 (1561075659282841600), 9 (1561075659289133056), 10 (1561075659298570240), 12 (1561075659301715968), 13 (1561075659304861696), 14 (1561075659308007424)],commit=} 0 268
+2017-03-05 23:49:27.545 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:27.547 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:27.547 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:27.554 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:27.555 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=10
+2017-03-05 23:49:27.603 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:27.612 INFO  (Thread-17) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@350e6053[article_library] realtime]
+2017-03-05 23:49:27.625 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:27.643 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 17
+2017-03-05 23:49:27.658 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:27.658 INFO  (Thread-17) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:27.658 INFO  (Thread-17) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:27.792 INFO  (Thread-17) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@6bda73da[article_library] main]
+2017-03-05 23:49:27.795 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6bda73da[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(6.3.0):C7)))}
+2017-03-05 23:49:27.795 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:27.796 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@6bda73da[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(6.3.0):C7)))}
+2017-03-05 23:49:27.797 INFO  (Thread-17) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:27.808 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:27.809 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:27.809 INFO  (Thread-17) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.206
+2017-03-05 23:49:27.810 INFO  (Thread-17) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=10{deleteByQuery=*:* (-1561075664923131904),add=[2 (1561075664965074944), 6 (1561075664968220672), 7 (1561075664973463552), 9 (1561075664974512128), 10 (1561075664975560704), 12 (1561075664977657856), 14 (1561075664978706432)],commit=} 0 265
+2017-03-05 23:49:30.191 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:30.194 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:30.194 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:30.196 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4
+2017-03-05 23:49:30.198 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:30.206 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:30.215 INFO  (Thread-18) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@7cf5979[article_library] realtime]
+2017-03-05 23:49:30.225 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:30.233 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2017-03-05 23:49:30.244 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:30.244 INFO  (Thread-18) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:30.245 INFO  (Thread-18) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:30.370 INFO  (Thread-18) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@3b03f23f[article_library] main]
+2017-03-05 23:49:30.371 INFO  (Thread-18) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:30.371 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3b03f23f[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(6.3.0):C6)))}
+2017-03-05 23:49:30.371 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:30.372 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@3b03f23f[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(6.3.0):C6)))}
+2017-03-05 23:49:30.374 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:30.374 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:30.374 INFO  (Thread-18) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.168
+2017-03-05 23:49:30.375 INFO  (Thread-18) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4{deleteByQuery=*:* (-1561075667652575232),add=[2 (1561075667679838208), 6 (1561075667682983936), 7 (1561075667684032512), 9 (1561075667685081088), 10 (1561075667687178240), 14 (1561075667689275392)],commit=} 0 183
+2017-03-05 23:49:35.873 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:35.877 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:35.877 INFO  (qtp472654579-18) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:35.887 INFO  (qtp472654579-18) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=15
+2017-03-05 23:49:35.894 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:35.911 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:35.919 INFO  (Thread-19) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@29ea2231[article_library] realtime]
+2017-03-05 23:49:35.937 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:35.948 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2017-03-05 23:49:35.989 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:35.989 INFO  (Thread-19) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:35.989 INFO  (Thread-19) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:36.118 INFO  (Thread-19) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@40e8f6ca[article_library] main]
+2017-03-05 23:49:36.120 INFO  (Thread-19) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:36.120 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@40e8f6ca[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(6.3.0):C6)))}
+2017-03-05 23:49:36.120 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:36.120 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@40e8f6ca[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(6.3.0):C6)))}
+2017-03-05 23:49:36.128 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:36.129 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:36.129 INFO  (Thread-19) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.217
+2017-03-05 23:49:36.129 INFO  (Thread-19) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=15{deleteByQuery=*:* (-1561075673634701312),add=[2 (1561075673673498624), 6 (1561075673689227264), 7 (1561075673704955904), 9 (1561075673706004480), 10 (1561075673707053056), 14 (1561075673708101632)],commit=} 0 257
+2017-03-05 23:49:41.513 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:41.515 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:41.515 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:41.516 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=3
+2017-03-05 23:49:41.518 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:41.528 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:41.539 INFO  (Thread-20) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@181f7529[article_library] realtime]
+2017-03-05 23:49:41.549 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:41.556 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2017-03-05 23:49:41.565 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:41.565 INFO  (Thread-20) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:41.565 INFO  (Thread-20) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:41.694 INFO  (Thread-20) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@28fb585d[article_library] main]
+2017-03-05 23:49:41.694 INFO  (Thread-20) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:41.694 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@28fb585d[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(6.3.0):C6)))}
+2017-03-05 23:49:41.694 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:41.694 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@28fb585d[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(6.3.0):C6)))}
+2017-03-05 23:49:41.696 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:41.696 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:41.697 INFO  (Thread-20) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.168
+2017-03-05 23:49:41.697 INFO  (Thread-20) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=3{deleteByQuery=*:* (-1561075679529795584),add=[2 (1561075679553912832), 6 (1561075679557058560), 7 (1561075679558107136), 9 (1561075679559155712), 10 (1561075679560204288), 14 (1561075679561252864)],commit=} 0 184
+2017-03-05 23:49:53.002 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:53.004 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:53.004 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:53.007 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:53.007 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4
+2017-03-05 23:49:53.017 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:53.020 INFO  (Thread-21) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@913e785[article_library] realtime]
+2017-03-05 23:49:53.024 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:53.031 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2017-03-05 23:49:53.122 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:53.123 INFO  (Thread-21) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:53.123 INFO  (Thread-21) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:53.253 INFO  (Thread-21) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@391dc493[article_library] main]
+2017-03-05 23:49:53.256 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@391dc493[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(6.3.0):C7)))}
+2017-03-05 23:49:53.257 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:53.257 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@391dc493[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(6.3.0):C7)))}
+2017-03-05 23:49:53.263 INFO  (Thread-21) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:53.266 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:53.267 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:53.267 INFO  (Thread-21) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.250
+2017-03-05 23:49:53.268 INFO  (Thread-21) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4{deleteByQuery=*:* (-1561075691570593792),add=[2 (1561075691586322432), 6 (1561075691659722752), 7 (1561075691661819904), 9 (1561075691663917056), 10 (1561075691678597120), 14 (1561075691679645696), 15 (1561075691680694272)],commit=} 0 265
+2017-03-05 23:49:57.073 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:49:57.078 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:49:57.078 INFO  (qtp472654579-15) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:49:57.084 INFO  (qtp472654579-15) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=11
+2017-03-05 23:49:57.085 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:49:57.093 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:57.102 INFO  (Thread-22) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@f4b02fc[article_library] realtime]
+2017-03-05 23:49:57.134 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:49:57.150 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 16
+2017-03-05 23:49:57.182 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:49:57.182 INFO  (Thread-22) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:49:57.182 INFO  (Thread-22) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:49:57.298 INFO  (Thread-22) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@6fc7778b[article_library] main]
+2017-03-05 23:49:57.299 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6fc7778b[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.3.0):C6)))}
+2017-03-05 23:49:57.299 INFO  (Thread-22) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:49:57.299 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:49:57.299 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@6fc7778b[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(6.3.0):C6)))}
+2017-03-05 23:49:57.301 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:49:57.301 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:49:57.301 INFO  (Thread-22) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.208
+2017-03-05 23:49:57.301 INFO  (Thread-22) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=11{deleteByQuery=*:* (-1561075695845638144),add=[2 (1561075695905406976), 6 (1561075695914844160), 7 (1561075695917989888), 9 (1561075695920087040), 10 (1561075695921135616), 14 (1561075695922184192)],commit=} 0 229
+2017-03-05 23:50:00.837 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:50:00.839 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:50:00.839 INFO  (qtp472654579-17) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:50:00.842 INFO  (qtp472654579-17) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=5
+2017-03-05 23:50:00.845 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:50:00.857 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:00.866 INFO  (Thread-23) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@542f24e9[article_library] realtime]
+2017-03-05 23:50:00.878 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:50:00.896 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 17
+2017-03-05 23:50:00.907 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:50:00.908 INFO  (Thread-23) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:50:00.908 INFO  (Thread-23) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:50:01.034 INFO  (Thread-23) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@439491ea[article_library] main]
+2017-03-05 23:50:01.035 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@439491ea[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(6.3.0):C7)))}
+2017-03-05 23:50:01.035 INFO  (Thread-23) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:50:01.035 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:50:01.035 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@439491ea[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(6.3.0):C7)))}
+2017-03-05 23:50:01.041 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:01.041 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:50:01.042 INFO  (Thread-23) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.184
+2017-03-05 23:50:01.042 INFO  (Thread-23) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=5{deleteByQuery=*:* (-1561075699792478208),add=[2 (1561075699834421248), 6 (1561075699837566976), 7 (1561075699839664128), 9 (1561075699840712704), 10 (1561075699841761280), 14 (1561075699842809856), 16 (1561075699843858432)],commit=} 0 205
+2017-03-05 23:50:04.283 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:50:04.285 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:50:04.285 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:50:04.290 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=7
+2017-03-05 23:50:04.293 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:50:04.298 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:04.308 INFO  (Thread-24) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@14dba64d[article_library] realtime]
+2017-03-05 23:50:04.320 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:50:04.332 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 12
+2017-03-05 23:50:04.357 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:50:04.357 INFO  (Thread-24) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:50:04.357 INFO  (Thread-24) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:50:04.506 INFO  (Thread-24) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@334025f3[article_library] main]
+2017-03-05 23:50:04.508 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@334025f3[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_d(6.3.0):C6)))}
+2017-03-05 23:50:04.508 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:50:04.508 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@334025f3[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_d(6.3.0):C6)))}
+2017-03-05 23:50:04.508 INFO  (Thread-24) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:50:04.512 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:04.513 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:50:04.514 INFO  (Thread-24) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.215
+2017-03-05 23:50:04.514 INFO  (Thread-24) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=7{deleteByQuery=*:* (-1561075703399579648),add=[2 (1561075703440474112), 6 (1561075703447814144), 7 (1561075703448862720), 9 (1561075703449911296), 10 (1561075703459348480), 14 (1561075703460397056)],commit=} 0 231
+2017-03-05 23:50:53.236 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:50:53.238 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:50:53.238 INFO  (qtp472654579-13) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:50:53.240 INFO  (qtp472654579-13) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4
+2017-03-05 23:50:53.240 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:50:53.253 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:53.258 INFO  (Thread-25) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@329f4741[article_library] realtime]
+2017-03-05 23:50:53.268 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:50:53.281 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 12
+2017-03-05 23:50:53.302 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:50:53.302 INFO  (Thread-25) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:50:53.302 INFO  (Thread-25) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:50:53.423 INFO  (Thread-25) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@48714e4[article_library] main]
+2017-03-05 23:50:53.425 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@48714e4[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_e(6.3.0):C7)))}
+2017-03-05 23:50:53.425 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:50:53.425 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@48714e4[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_e(6.3.0):C7)))}
+2017-03-05 23:50:53.426 INFO  (Thread-25) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:50:53.432 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:50:53.433 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:50:53.433 INFO  (Thread-25) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.179
+2017-03-05 23:50:53.433 INFO  (Thread-25) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=4{deleteByQuery=*:* (-1561075754733666304),add=[2 (1561075754763026432), 6 (1561075754765123584), 7 (1561075754766172160), 9 (1561075754772463616), 10 (1561075754774560768), 14 (1561075754775609344), 17 (1561075754780852224)],commit=} 0 197
+2017-03-05 23:56:57.668 INFO  (qtp472654579-21) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:56:57.671 INFO  (qtp472654579-21) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:56:57.672 INFO  (qtp472654579-21) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:56:57.676 INFO  (qtp472654579-21) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=8
+2017-03-05 23:56:57.677 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:56:57.686 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:56:57.690 INFO  (Thread-26) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@713685be[article_library] realtime]
+2017-03-05 23:56:57.695 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:56:57.705 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2017-03-05 23:56:57.719 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:56:57.719 INFO  (Thread-26) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:56:57.719 INFO  (Thread-26) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:56:57.855 INFO  (Thread-26) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@728b255a[article_library] main]
+2017-03-05 23:56:57.856 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@728b255a[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_f(6.3.0):C7)))}
+2017-03-05 23:56:57.856 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:56:57.856 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@728b255a[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_f(6.3.0):C7)))}
+2017-03-05 23:56:57.858 INFO  (Thread-26) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:56:57.860 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:56:57.861 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:56:57.861 INFO  (Thread-26) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.174
+2017-03-05 23:56:57.861 INFO  (Thread-26) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=8{deleteByQuery=*:* (-1561076136868315136),add=[2 (1561076136889286656), 6 (1561076136894529536), 7 (1561076136896626688), 9 (1561076136898723840), 10 (1561076136899772416), 14 (1561076136901869568), 17 (1561076136901869569)],commit=} 0 194
+2017-03-05 23:57:08.863 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:57:08.865 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:57:08.865 INFO  (qtp472654579-19) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:57:08.870 INFO  (qtp472654579-19) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=7
+2017-03-05 23:57:08.875 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:57:08.888 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:57:08.895 INFO  (Thread-27) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@5491bf9b[article_library] realtime]
+2017-03-05 23:57:08.900 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:57:08.917 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 16
+2017-03-05 23:57:08.928 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:57:08.928 INFO  (Thread-27) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:57:08.928 INFO  (Thread-27) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:57:09.055 INFO  (Thread-27) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@4519190c[article_library] main]
+2017-03-05 23:57:09.057 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4519190c[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_g(6.3.0):C8)))}
+2017-03-05 23:57:09.057 INFO  (Thread-27) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:57:09.057 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:57:09.057 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@4519190c[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_g(6.3.0):C8)))}
+2017-03-05 23:57:09.059 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:57:09.060 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:57:09.060 INFO  (Thread-27) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.172
+2017-03-05 23:57:09.060 INFO  (Thread-27) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=7{deleteByQuery=*:* (-1561076148615512064),add=[2 (1561076148645920768), 6 (1561076148648017920), 7 (1561076148648017921), 9 (1561076148649066496), 10 (1561076148650115072), 14 (1561076148655357952), 17 (1561076148655357953), 18 (1561076148656406528)],commit=} 0 197
+2017-03-05 23:57:17.680 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2017-03-05 23:57:17.682 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2017-03-05 23:57:17.682 INFO  (qtp472654579-12) [   x:article_library] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-03-05 23:57:17.683 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.DataImporter Starting Full Import
+2017-03-05 23:57:17.683 INFO  (qtp472654579-12) [   x:article_library] o.a.s.c.S.Request [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=3
+2017-03-05 23:57:17.696 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:57:17.700 INFO  (Thread-28) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@1bc78c9a[article_library] realtime]
+2017-03-05 23:57:17.705 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/article_library
+2017-03-05 23:57:17.716 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2017-03-05 23:57:17.728 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.DocBuilder Import completed successfully
+2017-03-05 23:57:17.728 INFO  (Thread-28) [   x:article_library] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-03-05 23:57:17.728 INFO  (Thread-28) [   x:article_library] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6dc09bae
+2017-03-05 23:57:17.844 INFO  (Thread-28) [   x:article_library] o.a.s.s.SolrIndexSearcher Opening [Searcher@15c11c30[article_library] main]
+2017-03-05 23:57:17.846 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@15c11c30[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(6.3.0):C7)))}
+2017-03-05 23:57:17.846 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-03-05 23:57:17.847 INFO  (Thread-28) [   x:article_library] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-03-05 23:57:17.847 INFO  (searcherExecutor-7-thread-1-processing-x:article_library) [   x:article_library] o.a.s.c.SolrCore [article_library] Registered new searcher Searcher@15c11c30[article_library] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(6.3.0):C7)))}
+2017-03-05 23:57:17.853 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-03-05 23:57:17.853 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-03-05 23:57:17.853 INFO  (Thread-28) [   x:article_library] o.a.s.h.d.DocBuilder Time taken = 0:0:0.156
+2017-03-05 23:57:17.853 INFO  (Thread-28) [   x:article_library] o.a.s.u.p.LogUpdateProcessorFactory [article_library]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=3{deleteByQuery=*:* (-1561076157851369472),add=[2 (1561076157872340992), 6 (1561076157877583872), 7 (1561076157879681024), 9 (1561076157880729600), 10 (1561076157881778176), 14 (1561076157881778177), 17 (1561076157882826752)],commit=} 0 173

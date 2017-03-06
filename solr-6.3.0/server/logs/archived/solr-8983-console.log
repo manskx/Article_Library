@@ -1,6 +1,6 @@
-2017-03-04 14:03:13.685 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
-2017-03-04 14:03:13.956 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
-2017-03-04 14:03:13.956 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-03-04 14:03:13.956 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/workspace/article_library/solr-6.3.0
-2017-03-04 14:03:14.015 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-03-04T14:03:13.957Z
-2017-03-04 14:03:14.016 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-03-04 14:17:51.635 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2017-03-04 14:17:51.900 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2017-03-04 14:17:51.901 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-03-04 14:17:51.901 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/workspace/article_library/solr-6.3.0
+2017-03-04 14:17:51.968 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-03-04T14:17:51.903Z
+2017-03-04 14:17:51.968 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
