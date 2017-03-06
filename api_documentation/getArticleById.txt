@@ -1,0 +1,14 @@
+URL: /Article/api/articles/{id}
+Method: GET
+Header: Accept:application/json
+
+Response: 
+Status: 200
+Body: Json Object article
+EX:
+	{
+		"id": 2,
+		"title": "eeemansy title 2_ modifiedeeeewwwww",
+		"body": "test mansy body 2wwwwww"
+	},
+

@@ -1,0 +1,21 @@
+URL: /Article/api/articles/
+Method: GET
+Header: Accept:application/json
+
+Response: 
+Status: 200
+Body: Json Array list of articles
+EX:
+		[
+		  {
+		    "id": 2,
+		    "title": "eeemansy title 2_ modifiedeeeewwwww",
+		    "body": "test mansy body 2wwwwww"
+		  },
+		  {
+		    "id": 6,
+		    "title": "MANSY BODY TESTeeeeee",
+		    "body": ""
+		  }
+		]
+

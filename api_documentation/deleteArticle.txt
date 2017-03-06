@@ -1,0 +1,11 @@
+URL: /Article/api/articles/{id}
+Method: DELETE
+Content-Type:application/json
+
+{id}: id of article to be deleted
+
+Response: 
+Status: 200
+Body: text
+	EX: article deleted
+	

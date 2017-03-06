@@ -1,0 +1,24 @@
+URL: /Article/api/articles/search/?query={query}
+Method: GET
+Header: Accept:application/json
+
+QueryParam:
+	 query: query for searching
+
+Response: 
+Status: 200
+Body: Json Array list of articles that matche the query
+EX:
+		[
+		  {
+		    "id": 2,
+		    "title": "eeemansy title 2_ modifiedeeeewwwww",
+		    "body": "test mansy body 2wwwwww"
+		  },
+		  {
+		    "id": 6,
+		    "title": "MANSY BODY TESTeeeeee",
+		    "body": ""
+		  }
+		]
+

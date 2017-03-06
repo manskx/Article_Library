@@ -1,0 +1,17 @@
+URL: /Article/api/articles/
+Method: POST
+Content-Type:application/json
+
+Rquest Body: Json object of Article
+EX:
+  {
+    "title": "mansy title 5",
+    "body": "test mansy body 5"
+  }
+
+
+Response: 
+Status: 200
+Body: text
+EX: article added
+	

@@ -1,0 +1,18 @@
+URL: /Article/api/articles/
+Method: PUT
+Content-Type:application/json
+
+Rquest Body: Json object of Article
+EX:
+  {
+  	"id":2,
+    "title": "mansy title 2_ modified",
+    "body": "test mansy body 2"
+  }
+
+
+Response: 
+Status: 200
+Body: text
+EX: article saved
+	
