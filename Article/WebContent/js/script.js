@@ -83,7 +83,7 @@ function UpdateArticleDetails() {
 
 	// Update the details by requesting to the server using ajax
 	var article = {
-		id:id,
+		id : id,
 		title : title,
 		body : body,
 	};
@@ -96,6 +96,27 @@ function UpdateArticleDetails() {
 			$("#update_article_modal").modal("hide");
 			// reload Articles
 			readArticles();
+		}
+	});
+}
+
+function search() {
+	var query = $("#input_search").val();
+	if (!query) {
+		readArticles();
+		return;
+	}
+	$.ajax({
+		url : 'api/articles/search',
+		type : 'GET',
+		data : "query=" + query,
+		success : function(data, status) {
+			var template = $("#article_mustache_template").html();
+			var html = "";
+			for (var i = 0; i < data.length; i++) {
+				html += Mustache.to_html(template, data[i]);
+			}
+			$('#articles_content').html(html);
 		}
 	});
 }
